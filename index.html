@@ -11,7 +11,7 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark animate_animated animate_backInDown">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark animate_animated animate_backInDown fixed-top">
       <div class="container-fluid">
         <h1 class="navbar-brand">Colombianita👨‍🍳</h1>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -42,30 +42,58 @@
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
 
-    <section class="card">
-      <div class="card text-bg-info mb-3" style="max-width: 600px; text-align: center;">
-        <span class="border">
-        <div class="card-body">
-          <h4>RESTAURANTE COLOMBIANO</h4>
-          <br>
-          <br>
-          <p class="card-text">Somos una experiencia de hospitalidad y gastronomía Colombiana en constante movimiento. Empezamos en 2020, creando el
-          primer restaurante Colombianita local. Desde entonces, nos dedicamos a cocinar tus platillos tipicos colombianos
-          favoritos, recibiéndote
-          siempre, en un ambiente casual y divertido. Cada día, seleccionamos los mejores ingredientes de proveedores locales.
-          Trabajamos en equipo para tocar positivamente la vida de
-          nuestros compañeros e invitados con procesos seguros, excelente servicio y pasión culinaria. Nos mueve aprender, enseñar
-          y descubrir para crecer. Creemos en aprovechar lo que recibimos para convertirlo en algo mejor. Sobre todas las cosas,
-          siempre queremos que la pases bien comiendo y bebiendo delicioso con nosotros. Descubre todo nuestro menú
-          sorprendiéndote con algo nuevo cada vez.
-          </p>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-6">
+          <section class="card">
+            <div class="card mb-3" style="max-width: 600px; text-align: center;">
+              <span class="border">
+              <div class="card-body">
+                <h4>RESTAURANTE COLOMBIANO</h4>
+                <br>
+                <br>
+                <p class="card-text">Somos una experiencia de hospitalidad y gastronomía Colombiana 
+                en constante movimiento. Empezamos en 2020, creando el
+                primer restaurante Colombianita local. Desde entonces, nos dedicamos a cocinar tus platillos tipicos colombianos favoritos, recibiéndote
+                siempre, en un ambiente casual y divertido. Cada día, seleccionamos los mejores ingredientes de proveedores locales.
+                Trabajamos en equipo para tocar positivamente la vida de nuestros compañeros e invitados con procesos seguros, excelente servicio y pasión culinaria.
+                Nos mueve aprender, enseñar y descubrir para crecer. Creemos en aprovechar lo que recibimos para convertirlo en algo mejor. Sobre 
+                todas las cosas, siempre queremos que la pases bien comiendo y bebiendo delicioso con nosotros. Descubre todo nuestro menú sorprendiéndote con algo nuevo cada vez.
+                </p>
+              </div>
+              </span>
+            </div>
+          </section>
         </div>
-        <div class="col-4 animate_animated animate_bounceInRight">
-          <img src="img/ettore.jpg" alt="Not Found" class="img-fluid w-100 mb-2" id="fotoB">
-        </div>
-        </span>
       </div>
-    </section>
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/bandeja paisa.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/mondongo.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/Ajiaco.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
 
     <!-- Texto largo -->
@@ -93,9 +121,6 @@
               Nombre: Colombianita <br>
               Correo: Colombianita@gmail.com
             </p>
-          </div>
-          <div class="col-4 mt-2">
-            <img src="img/avatar.png" alt="yoyo" width="170px" height="170px">
           </div>
         </div>
       </div>
